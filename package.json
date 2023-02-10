@@ -8,11 +8,11 @@
     "predeploy": "npm run dev",
     "deploy": "gh-pages -d dev",
     "test": "jest --forceExit --no-color 2>jest_report.txt",
-    "start": "ts-node-dev --respawn --pretty --transpile-only src/server.ts",
+    "start": "node build/src/server.js",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/server.ts",
     "dev:consumer": " npx ts-node src/kafkaConsumerServer.ts",
     "prebuild": "rimraf build",
-    "build": "tsc src/server.ts"
+    "build": "tsc"
   },
   "dependencies": {
     "apisauce": "^2.1.1",
