@@ -38,7 +38,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 exports.saveToExcel = exports.saveToDB = void 0;
 var fillExcel_model_1 = require("../../store/model/fillExcel.model");
-var fs = require("fs");
+var fs_1 = require("fs");
 function saveToDB(data) {
     return __awaiter(this, void 0, void 0, function () {
         var studentData;
@@ -62,7 +62,7 @@ function saveToExcel(studentInfo) {
             try {
                 data = '';
                 data = data + studentInfo.aadharNumber + '\t' + studentInfo.name + '\t' + studentInfo.fatherName + '\t' + studentInfo.motherName + '\t' + studentInfo.dob + '\t' + studentInfo.gender + '\t' + studentInfo.socialCategory + '\t' + studentInfo.religion + '\t' + studentInfo.motherTongue + '\t' + studentInfo.locality + '\t' + studentInfo.bpl + '\t' + studentInfo.disadvantagedGroup + '\t' + studentInfo.academicYear + '\t' + studentInfo.udiceCode + '\t' + studentInfo.schoolName + '\t' + studentInfo.freeEducation + '\t' + studentInfo.currentClass + '\t' + studentInfo.section + '\t' + studentInfo.admissionNumber + '\t' + studentInfo.medium + '\t' + studentInfo.dateOfAdmission + '\t' + studentInfo.newAdmission + '\t' + studentInfo.previousClass + '\t' + studentInfo.class1Previous + '\t' + studentInfo.attendance + '\t' + studentInfo.previousPercentage + '\t' + studentInfo.uniformSet + '\t' + studentInfo.disabilityType + '\t' + studentInfo.facilityReceived + '\t' + studentInfo.freeBooks + '\t' + studentInfo.freeTransport + '\t' + studentInfo.freeEscort + '\t' + studentInfo.freeBicycle + '\t' + studentInfo.freeHostel + '\t' + studentInfo.childTraining + '\t' + studentInfo.homeless + '\t' + studentInfo.bankAccNo + '\t' + studentInfo.IFSC + '\t' + studentInfo.mobile + '\t' + studentInfo.email + '\n';
-                fs.appendFile('student.xls', data, function (err) {
+                fs_1["default"].appendFile('student.xls', data, function (err) {
                     if (err)
                         throw err;
                     console.log('File created');

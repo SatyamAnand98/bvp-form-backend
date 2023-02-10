@@ -8,7 +8,7 @@
     "predeploy": "npm run dev",
     "deploy": "gh-pages -d dev",
     "test": "jest --forceExit --no-color 2>jest_report.txt",
-    "start": "node build/src/server.js",
+    "start": "ts-node-dev --respawn --pretty --transpile-only src/server.ts",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/server.ts",
     "dev:consumer": " npx ts-node src/kafkaConsumerServer.ts",
     "prebuild": "rimraf build",

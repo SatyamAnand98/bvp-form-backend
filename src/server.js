@@ -36,11 +36,11 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 exports.__esModule = true;
-var cors = require("cors");
+var cors_1 = require("cors");
 var dotenv = require("dotenv");
-var express = require("express");
-var helmet = require("helmet");
-var mongoose = require("mongoose");
+var express_1 = require("express");
+var helmet_1 = require("helmet");
+var mongoose_1 = require("mongoose");
 var populateExcel_controller_1 = require("./fillExcel/populateExcel.controller");
 dotenv.config();
 var BoltServer = /** @class */ (function () {
@@ -52,7 +52,7 @@ var BoltServer = /** @class */ (function () {
                     case 0: return [4 /*yield*/, this.configDBModels()];
                     case 1:
                         _a.sent();
-                        this.server = express();
+                        this.server = (0, express_1["default"])();
                         this.middleware();
                         this.configRoutes();
                         this.start();
@@ -66,7 +66,7 @@ var BoltServer = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         _a.trys.push([0, 2, , 3]);
-                        return [4 /*yield*/, mongoose.connect(process.env.DB_ENDPOINT, {
+                        return [4 /*yield*/, mongoose_1["default"].connect(process.env.DB_ENDPOINT, {
                                 useNewUrlParser: true,
                                 useUnifiedTopology: true,
                                 useCreateIndex: true,
@@ -87,9 +87,9 @@ var BoltServer = /** @class */ (function () {
             });
         }); };
         this.middleware = function () {
-            _this.server.use(helmet());
-            _this.server.use(cors());
-            _this.server.use(express.json());
+            _this.server.use((0, helmet_1["default"])());
+            _this.server.use((0, cors_1["default"])());
+            _this.server.use(express_1["default"].json());
         };
         this.configRoutes = function () {
             _this.server.post('/fill/excel/', populateExcel_controller_1.populateExcel);
