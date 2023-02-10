@@ -1,8 +1,8 @@
-import cors from "cors";
+import * as cors from "cors";
 import * as dotenv from "dotenv";
-import express from "express";
-import helmet from "helmet";
-import mongoose from "mongoose";
+import * as express from "express";
+import * as helmet from "helmet";
+import * as mongoose from "mongoose";
 import { populateExcel } from "./fillExcel/populateExcel.controller";
 
 dotenv.config();
