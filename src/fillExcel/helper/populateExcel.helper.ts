@@ -1,5 +1,5 @@
 import { fillExcelModel } from "../../store/model/fillExcel.model";
-import fs from "fs";
+import * as fs from "fs";
 
 export async function saveToDB(data){
     const studentData = new fillExcelModel(data);
