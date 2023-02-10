@@ -30,7 +30,7 @@ export const getStudentDetailValidator = Joi.object({
     bankAccNo: Joi.string()
         .pattern(/^[0-9]+$/)
         .allow(null, ""),
-    IFSC: Joi.string(),
+    IFSC: Joi.string().optional().allow(null, ""),
     previousClass: Joi.string().valid(...Object.values(EClass)).required(),
     currentClass: Joi.string().valid(...Object.values(EClass)).required(),
     gender: Joi.string().valid(...Object.values(EGender)).required(),

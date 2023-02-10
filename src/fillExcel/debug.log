@@ -1,0 +1,74 @@
+🟢 connected to DB
+🟢 Server is running on port 3002
+{
+  aadharNumber: '725335304104',
+  name: 'Satyam Anand',
+  mobile: '9513868175',
+  email: 'thesatemail@gmail.com',
+  fatherName: 'Vijay',
+  motherName: 'Sunita Kumari',
+  dob: '28/03/1998',
+  gender: 'Male',
+  socialCategory: 'Unreserved',
+  religion: 'Hindu',
+  motherTongue: 'Hindi',
+  bpl: 'No',
+  disadvantagedGroup: 'No',
+  currentClass: 'Class 4',
+  dateOfAdmission: '01/04/2022',
+  newAdmission: 'New',
+  previousClass: 'Class 3',
+  previousPercentage: '95',
+  disabilityType: 'NA',
+  bankAccNo: '',
+  IFSC: ''
+}
+File created
+{
+  aadharNumber: '',
+  name: '',
+  mobile: '',
+  email: '',
+  fatherName: '',
+  motherName: '',
+  dob: '',
+  gender: '',
+  socialCategory: '',
+  religion: '',
+  motherTongue: '',
+  bpl: '',
+  disadvantagedGroup: '',
+  currentClass: '',
+  dateOfAdmission: '',
+  newAdmission: '',
+  previousClass: '',
+  previousPercentage: '',
+  disabilityType: '',
+  bankAccNo: '',
+  IFSC: ''
+}
+error: "name" is not allowed to be empty
+{
+  aadharNumber: '',
+  name: '',
+  mobile: '',
+  email: '',
+  fatherName: '',
+  motherName: '',
+  dob: '',
+  gender: '',
+  socialCategory: '',
+  religion: '',
+  motherTongue: '',
+  bpl: '',
+  disadvantagedGroup: '',
+  currentClass: '',
+  dateOfAdmission: '',
+  newAdmission: '',
+  previousClass: '',
+  previousPercentage: '',
+  disabilityType: '',
+  bankAccNo: '',
+  IFSC: ''
+}
+error: "name" is not allowed to be empty
