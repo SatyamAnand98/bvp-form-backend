@@ -37,7 +37,7 @@ class BoltServer {
 				dbName: "bvp",
 				maxPoolSize: 4000
 			});
-			console.log(`🟢 connected to ${process.env.DB_ENDPOINT}`)
+			console.log(`🟢 connected to DB`)
         }
         catch(error){
             console.log(`🔴 Mongodb Connection error: ${error.message}`)
