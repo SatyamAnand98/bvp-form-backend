@@ -1,4 +1,4 @@
-import * as Joi from "joi";
+import Joi from "joi";
 import { EBPL, EClass, EClothSet, EDisability, EDisadvantageGroup, EFacilities, EFreeBicycle, EFreeBooks, EFreeEducation, EFreeEscort, EFreeHostel, EFreeTransport, EGender, EHomeless, ELanguage, ENewAdmission, EPreviousToClass1, EReligion, ESocialCategory, ESpecialTraining } from "../enum/populateExcel.enum";
 
 export const getStudentDetailValidator = Joi.object({
